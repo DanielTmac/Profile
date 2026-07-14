@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marlon Daniel Casin — IT Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="pg-wrap">
+
+    <!-- Hero / Terminal -->
+    <section class="pg-hero">
+      <div class="pg-terminal-bar">
+        <div class="pg-dot" style="background:#FF5F57"></div>
+        <div class="pg-dot" style="background:#FFBD2E"></div>
+        <div class="pg-dot" style="background:#28CA41"></div>
+      </div>
+      <div class="pg-prompt">$ whoami</div>
+      <h1 class="pg-name">Marlon Daniel <span class="accent">Casin</span><span class="pg-cursor"></span></h1>
+      <p class="pg-title">IT_Specialist @ DOST-PTRI &nbsp;·&nbsp; 6+ years</p>
+      <div class="pg-uptime-row">
+        <div class="pg-uptime-item">
+          <div class="pg-pulse"></div>
+          <span class="pg-uptime-label">services.dost-ptri.com</span> online
+        </div>
+        <div class="pg-uptime-item">
+          <div class="pg-pulse"></div>
+          <span class="pg-uptime-label">procmis.dost-ptri.com</span> online
+        </div>
+        <div class="pg-uptime-item">
+          <div class="pg-pulse orange"></div>
+          <span class="pg-uptime-label">backups</span> scheduled
+        </div>
+      </div>
+    </section>
+
+    <!-- Stat Cards -->
+    <div class="pg-meta">
+      <div class="pg-meta-card">
+        <p class="pg-meta-val">6<span class="accent">+</span></p>
+        <p class="pg-meta-lbl">years in gov't IT</p>
+      </div>
+      <div class="pg-meta-card">
+        <p class="pg-meta-val">3<span class="accent">+</span></p>
+        <p class="pg-meta-lbl">systems deployed</p>
+      </div>
+      <div class="pg-meta-card">
+        <p class="pg-meta-val">5</p>
+        <p class="pg-meta-lbl">core disciplines</p>
+      </div>
+      <div class="pg-meta-card">
+        <p class="pg-meta-val">∞</p>
+        <p class="pg-meta-lbl">tickets closed</p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <p class="pg-section-label">Disciplines — click to expand</p>
+    <div class="pg-skills-grid" id="skillGrid">
+      <div class="pg-skill-card active" data-key="sysadmin" onclick="selectSkill('sysadmin', this)">
+        <div class="pg-skill-icon"><i class="ti ti-server" aria-hidden="true"></i></div>
+        <p class="pg-skill-name">System Administration</p>
+        <p class="pg-skill-sub">Server ops, backups, uptime monitoring</p>
+      </div>
+      <div class="pg-skill-card" data-key="dev" onclick="selectSkill('dev', this)">
+        <div class="pg-skill-icon"><i class="ti ti-code" aria-hidden="true"></i></div>
+        <p class="pg-skill-name">Software Development</p>
+        <p class="pg-skill-sub">PHP, JS, Laravel, Symfony, C#, ASP.NET</p>
+      </div>
+      <div class="pg-skill-card" data-key="devops" onclick="selectSkill('devops', this)">
+        <div class="pg-skill-icon"><i class="ti ti-cloud-upload" aria-hidden="true"></i></div>
+        <p class="pg-skill-name">DevOps &amp; Infrastructure</p>
+        <p class="pg-skill-sub">Deployment, hosting, monitoring</p>
+      </div>
+      <div class="pg-skill-card" data-key="network" onclick="selectSkill('network', this)">
+        <div class="pg-skill-icon"><i class="ti ti-topology-star" aria-hidden="true"></i></div>
+        <p class="pg-skill-name">Network Support</p>
+        <p class="pg-skill-sub">Routers, switches, LAN, diagnostics</p>
+      </div>
+      <div class="pg-skill-card" data-key="support" onclick="selectSkill('support', this)">
+        <div class="pg-skill-icon"><i class="ti ti-tool" aria-hidden="true"></i></div>
+        <p class="pg-skill-name">Technical Support</p>
+        <p class="pg-skill-sub">Hardware, software, printing</p>
+      </div>
+    </div>
+
+    <!-- Detail Panel -->
+    <div class="pg-detail">
+      <p class="pg-detail-title" id="detailTitle">System Administration</p>
+      <div class="pg-detail-tags" id="detailTags"></div>
+    </div>
+
+    <!-- Stack -->
+    <div class="pg-stack-row">
+      <div class="pg-stack-card">
+        <p class="pg-stack-head">// languages &amp; frameworks</p>
+        <div class="pg-stack-items">
+          <div class="pg-stack-item"><div class="pg-stack-dot"></div>PHP / Laravel / Symfony</div>
+          <div class="pg-stack-item"><div class="pg-stack-dot"></div>JavaScript</div>
+          <div class="pg-stack-item"><div class="pg-stack-dot"></div>C# / ASP.NET</div>
+          <div class="pg-stack-item"><div class="pg-stack-dot orange"></div>MySQL</div>
+        </div>
+      </div>
+      <div class="pg-stack-card">
+        <p class="pg-stack-head">// sample systems built</p>
+        <div class="pg-stack-items">
+          <div class="pg-stack-item"><div class="pg-stack-dot orange"></div>ProcMIS</div>
+          <div class="pg-stack-item"><div class="pg-stack-dot orange"></div>SRIS</div>
+          <div class="pg-stack-item"><div class="pg-stack-dot orange"></div>RYPIC Portal</div>
+          <div class="pg-stack-item"><div class="pg-stack-dot orange"></div>QR DocTrack</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deployed Systems -->
+    <div class="pg-deployed">
+      <p class="pg-dep-head">$ systemctl status --all production</p>
+      <div class="pg-dep-item">
+        <div class="pg-dep-status"></div>
+        <span class="pg-dep-url">services.dost-ptri.com</span>
+        <span class="pg-dep-desc">services portal</span>
+      </div>
+      <div class="pg-dep-item">
+        <div class="pg-dep-status"></div>
+        <span class="pg-dep-url">procmis.dost-ptri.com</span>
+        <span class="pg-dep-desc">procurement MIS</span>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
